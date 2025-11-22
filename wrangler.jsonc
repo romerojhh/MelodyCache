@@ -1,0 +1,20 @@
+{
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "name": "melody-cache",
+    "main": "src/lib/server/db/index.ts",
+    "compatibility_date": "2025-11-01",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "observability": {
+		"enabled": true
+	},
+    "d1_databases": [
+        {
+            "binding": "melodyCacheDB",
+            "database_name": "melody-cache-db",
+            "database_id": "578c3b28-30f3-4e29-a4d5-f8c2f3471348",
+            "migrations_dir": "drizzle/migrations"
+        }
+    ]
+}
